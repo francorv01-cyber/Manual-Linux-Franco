@@ -74,6 +74,27 @@ du -h carpeta/
 du -sh carpeta/
 </pre>
 
+<hr>
+
+<h2>FIND</h2>
+<p>Busca archivos y directorios según distintos criterios.</p>
+<h3>Opciones</h3>
+<ul>
+    <li>-name</li>
+    <li>-perm</li>
+    <li>-mtime</li>
+    <li>-exec</li>
+    <li>-size</li>
+</ul>
+<h3>Ejemplos</h3>
+<pre>
+find . -name "*.txt"
+find /home -perm 644
+find /var/log -mtime -7
+find . -name "*.log" -exec rm {} \;
+find . -size +10M
+</pre>
+
 </body>
 </html>
 
