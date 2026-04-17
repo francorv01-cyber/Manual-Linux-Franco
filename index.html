@@ -159,6 +159,22 @@ cut -d ":" -f 1 /etc/passwd
 cut -d "," -f 2 archivo.csv
 </pre>
 
+<hr>
+
+<h2>HEAD y TAIL</h2>
+<p>Muestran el inicio o el final de un archivo.</p>
+<h3>Opciones</h3>
+<ul>
+    <li>head -n</li>
+    <li>tail -n</li>
+    <li>tail -f</li>
+</ul>
+<h3>Ejemplos</h3>
+<pre>
+head -n 10 archivo.txt
+tail -n 20 archivo.txt
+tail -f /var/log/syslog
+</pre>
 
 </body>
 </html>
